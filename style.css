@@ -5,6 +5,9 @@
   max-width: 1200px;
   margin: 0px auto;
 }
+main {
+  background-color: #fdfdfd;
+}
 nav {
   display: flex;
   gap: 100px;
@@ -129,4 +132,29 @@ li a:hover:not(.active),
 .menu-img {
   width: 200px;
   margin-bottom: 15px;
+}
+
+/* service-section */
+
+.service-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.service-card {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+
+.service-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fa-solid {
+  color: #fcb414;
+  font-size: large;
 }
