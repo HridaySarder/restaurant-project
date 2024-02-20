@@ -1,31 +1,46 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0px auto;
 }
-nav{
+nav {
   display: flex;
   gap: 100px;
   /* justify-content: space-between; */
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 20px 10px;
 }
-nav h2{
-  color: #FCB414;
+
+li a.active {
+  background-color: #04aa6b;
+  color: white;
 }
-ul{
+
+nav h2 {
+  color: #fcb414;
+  font-weight: bold;
+}
+ul {
   display: flex;
   gap: 10px;
   list-style-type: none;
 }
-li a{
+li a {
   text-decoration: none;
-  
+  padding: 10px 20px;
+  border-radius: 8px;
 }
+
+li a:hover:not(.active),
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
 /* banner section */
-.banner-container{
+.banner-container {
   margin-top: 40px;
   display: flex;
   gap: 100px;
@@ -34,52 +49,84 @@ li a{
   align-items: center;
 }
 
-.banner-heading{
-  color: #FCB414;
+.banner-heading {
+  color: #fcb414;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.banner-text{
+.banner-text {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.banner-btn{
+.banner-btn {
   padding: 10px;
-  background-color: #FCB414;
+  background-color: #fcb414;
   color: white;
   border: none;
   border-radius: 8px;
 }
 
-.baaner-img{
+.baaner-img {
   width: 400px;
 }
 
 /* about-us-section */
 
-.about-us-container{
+.about-us-container {
   margin-top: 50px;
   display: flex;
   align-items: center;
   gap: 100px;
 }
 
-
-.sub-heading{
-  color: #FCB414;
+.sub-heading {
+  color: #fcb414;
   margin-bottom: 10px;
 }
 
-.about-text{
+.about-text {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.about-img{
+.about-img {
   width: 350px;
   height: 350px;
+}
+
+/* menu-section */
+.menu-text {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card-container {
+  display: flex;
+
+  flex-wrap: nowrap;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 350px;
+  height: 300px;
+  padding: 10px;
+
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.menu-img {
+  width: 200px;
+  margin-bottom: 15px;
 }
