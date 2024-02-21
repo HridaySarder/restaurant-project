@@ -4,6 +4,8 @@
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0px auto;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
 main {
   background-color: #fdfdfd;
@@ -11,13 +13,12 @@ main {
 nav {
   display: flex;
   gap: 100px;
-  /* justify-content: space-between; */
   background-color: #ffffff;
   padding: 20px 10px;
 }
 
 li a.active {
-  background-color: #04aa6b;
+  background-color: #fcb414;
   color: white;
 }
 
@@ -27,7 +28,6 @@ nav h2 {
 }
 ul {
   display: flex;
-  gap: 10px;
   list-style-type: none;
 }
 li a {
@@ -47,8 +47,6 @@ li a:hover:not(.active),
   margin-top: 40px;
   display: flex;
   gap: 100px;
-  /* justify-items: center;
-  justify-content: center; */
   align-items: center;
 }
 
@@ -122,7 +120,7 @@ li a:hover:not(.active),
   width: 350px;
   height: 300px;
   padding: 10px;
-
+  border: 1px solid gold;
   text-align: center;
   background: #fff;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
@@ -152,9 +150,40 @@ li a:hover:not(.active),
 .service-text {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: bolder;
 }
 
-.fa-solid {
+.fa-icon {
   color: #fcb414;
-  font-size: large;
+  font-size: 40px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* footer-section */
+
+.footer-container {
+  display: flex;
+  margin-top: 60px;
+}
+
+.footer-text {
+  margin-bottom: 15px;
+}
+
+.social-icon {
+  display: block;
+  margin-top: 10px;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
