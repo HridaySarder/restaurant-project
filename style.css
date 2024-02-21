@@ -11,7 +11,15 @@ main {
   background-color: #fdfdfd;
 }
 nav {
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
   display: flex;
+  align-items: center;
   gap: 100px;
   background-color: #ffffff;
   padding: 20px 10px;
@@ -25,6 +33,7 @@ li a.active {
 nav h2 {
   color: #fcb414;
   font-weight: bold;
+  font-size: 30px;
 }
 ul {
   display: flex;
@@ -44,7 +53,7 @@ li a:hover:not(.active),
 
 /* banner section */
 .banner-container {
-  margin-top: 40px;
+  margin-top: 100px;
   display: flex;
   gap: 100px;
   align-items: center;
@@ -78,7 +87,7 @@ li a:hover:not(.active),
 /* about-us-section */
 
 .about-us-container {
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   gap: 100px;
@@ -97,17 +106,17 @@ li a:hover:not(.active),
 .about-img {
   width: 350px;
   height: 350px;
+  border-radius: 8px;
 }
 
 /* menu-section */
 .menu-text {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .card-container {
   display: flex;
-
   flex-wrap: nowrap;
 }
 
@@ -120,11 +129,22 @@ li a:hover:not(.active),
   width: 350px;
   height: 300px;
   padding: 10px;
-  border: 1px solid gold;
+
   text-align: center;
   background: #fff;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  position: relative;
+}
+
+.menu-icon {
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #fcb414;
+  border-radius: 5px;
 }
 
 .menu-img {
@@ -134,8 +154,12 @@ li a:hover:not(.active),
 
 /* service-section */
 
+#service {
+  margin-top: 150px;
+}
+
 .service-container {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
@@ -161,8 +185,8 @@ li a:hover:not(.active),
 .contact-info {
   display: flex;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /* footer-section */
